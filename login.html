@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_DmRpFYDmYqVbxoSCbEbIp");
+   })();
+</script>
+
+
+    <title>FLEX - Modulo Bancario</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="text-center">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-12 text-center">
+                                            <div class="huge">Flex</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="login-panel panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-unlock-alt "></i> Sign in</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <form role="form" method="post">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input id="txtEmail" class="form-control"  name = "user" >
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input id="txtPassword" class="form-control" type="password" name = "password">
+                                    </div>
+
+                                    <div class="text-right">
+                                        <!-- <button type="submit" href="index.html" class="btn btn-default">sign in</button> -->
+                                    </div>
+                                </form>
+
+                              </div>
+
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                      <h4 class="modal-title" id="myModalLabel">Please insert your token number</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                      <form role="form">
+
+                                                          <div class="form-group">
+                                                              <label>Token number</label>
+                                                              <input id="tokenNumber" class="form-control" placeholder="ex. 0000000">
+                                                          </div>
+
+
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                      <button id="finalLogin" type="button" class="btn btn-primary">Submit</button>
+                                                  </div>
+                                                  </form>
+                                              </div>
+                                              <!-- /.modal-content -->
+                                          </div>
+                                          <!-- /.modal-dialog -->
+                                      </div>
+                                      <!-- /.modal -->
+
+
+                                <div class="text-center">
+                                <button id="btnLogin" class="btn" >Sign in</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                            <div class="col-xs-12" style="height:5vh;"></div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+            <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+             <div class="mdl-snackbar__text"></div>
+             <button class="mdl-snackbar__action" type="button"></button>
+           </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Login js-->
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
